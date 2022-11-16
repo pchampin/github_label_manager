@@ -1,7 +1,8 @@
 from argparse import ArgumentParser
 from glm.common import repo_name, label_name, color_code
+import sys
 
-parser = ArgumentParser()
+parser = ArgumentParser("glm")
 subparsers = parser.add_subparsers(dest="subcommand", required=True)
 
 list = subparsers.add_parser("list")
